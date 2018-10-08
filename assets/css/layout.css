@@ -15,12 +15,12 @@ body {
 }
 
 .navbar-nav {
-    padding: 15px;
+    padding: 25px;
     text-align: right;
 }
 .btn {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
     border: none;
     background-color: none;
 }
