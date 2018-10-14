@@ -58,7 +58,6 @@ h2 a:hover {
     padding: 15px;
     font-family: 'Cuprum', 700, sans-serif;
     font-size: 2.5em;
-    font-weight: bolder;
     text-shadow: 0 2px 5px rgb(0,0,0);
 }
 .nav-item {
@@ -75,7 +74,7 @@ h2 a:hover {
 }
 
 /* CONTENT */
-#content .info { 
+#linkContent .info { 
     max-height: 500px;
     padding:20px; 
 }
@@ -120,13 +119,15 @@ h2 a:hover {
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg); 
 }
-.imageId { 
+
+
+.linkId { 
     border:2px solid #6fa8f3; 
     padding:20px; 
     width:176px; 
     height:68px; 
     background-image: linear-gradient(to bottom, rgb(0,0,0), #6fa8f3); 
-    margin:-195px 0 0 55px; 
+    margin:-195px 0 0 50px; 
     position:absolute;
     box-shadow: 0 20px 40px rgb(0,0,0);
     -moz-box-shadow:0 20px 40px rgb(0,0,0); 
@@ -137,25 +138,28 @@ h2 a:hover {
     -webkit-transition-property: transform, box-shadow, margin;
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s; 
-}
-#imageFrames li:hover .imageId { 
+}  
+
+#imageFrames li:hover .linkId { 
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg); 
     box-shadow: 0 5px 10px rgb(0,0,0);
     -webkit-box-shadow:0 5px 10px rgb(0,0,0); 
-    margin:-175px 0 0 30px; 
+    margin:-175px 0 0 45px; 
 }
-.imageId h3 { 
+
+.linkId h3 { 
     color: rgb(255,255,255); 
     font-variant: small-caps; 
     font-family:Georgia,serif,Times; 
     text-align:center; 
     padding-bottom:15px; 
 }
-.imageId p { 
+
+.linkId p { 
     padding-bottom:15px; 
 }
-.imageId a { 
+.linkId a { 
     background-color:#061b53;
     box-shadow: 0 10px 40px rgb(0,0,0);
     -moz-box-shadow: 0 10px 40px rgb(0,0,0);
@@ -163,17 +167,18 @@ h2 a:hover {
     padding:5px 10px; color: rgb(255,255,255); 
     text-decoration:none; 
     display:block; 
-    width:80px; 
+   /* width:80px; */
     text-align:center; 
     margin:0 auto;
     border-radius: 5px;
     -moz-border-radius:5px; 
     -webkit-border-radius:5px; 
 }
-.imageId a:hover, .imageId a:focus { 
+.linkId a:hover, .linkId a:focus { 
     background-color:#58b4f1; 
     color:#fff; 
-}
+} 
+
 
 /* FOOTER */
 .footer {
@@ -184,3 +189,6 @@ h2 a:hover {
     position: fixed;
 	bottom: 0;
 }
+
+
+
