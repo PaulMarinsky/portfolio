@@ -177,8 +177,7 @@ h2 a:hover {
 .linkId a:hover, .linkId a:focus { 
     background-color:#58b4f1; 
     color:#fff; 
-} 
-
+}
 
 /* FOOTER */
 .footer {
@@ -189,6 +188,3 @@ h2 a:hover {
     position: fixed;
 	bottom: 0;
 }
-
-
-
