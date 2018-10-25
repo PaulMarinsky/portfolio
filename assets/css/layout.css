@@ -272,22 +272,22 @@ h2 a:hover {
     animation: fade .5s ease-out 1.3s both;
   }
 
-  /* Modal Animation Keyframes 
+  /* Modal Animation Keyframes */
   @keyframes line-animation { 
   
     0%{
       width: 0;
-      opacity: 0.5;
+      opacity: 0;
     }
   
     99%{
       width: 100%;
-      opacity: 0.5;
+      opacity: 0;
     }
   
     100%{
       width: 100%;
-      opacity: 0.5;
+      opacity: 00;
     }  
   }
   @keyframes open-animation {
@@ -312,5 +312,5 @@ h2 a:hover {
       opacity: 1;
     }
   }
-  */
+  
    
