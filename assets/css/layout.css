@@ -199,6 +199,8 @@ h2 a:hover {
   .container img {
       position: relative;
       float: left;
+      padding: 35px;
+      box-shadow: 3px 3px 5px rgb(0,0,0);
   }
   .popup p {
     padding-right: 35px;
