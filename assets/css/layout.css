@@ -277,17 +277,17 @@ h2 a:hover {
   
     0%{
       width: 0;
-      opacity: 0;
+      opacity: 0.5;
     }
   
     99%{
       width: 100%;
-      opacity: 0;
+      opacity: 0.5;
     }
   
     100%{
       width: 100%;
-      opacity: 00;
+      opacity: 0.5;
     }  
   }
   @keyframes open-animation {
@@ -305,11 +305,11 @@ h2 a:hover {
   @keyframes fade{
   
     0%{
-      opacity: 0.5;
+      opacity: 0.8;
     }
   
     100%{
-      opacity: 1;
+      opacity: 0;
     }
   }
   
