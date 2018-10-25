@@ -7,4 +7,4 @@
 ##### Image animations rendered using CSS3
 ##### Conforms to current HTML5 document standards
 
-###### For more information about this page contact the web developer at pinsky79.web.dev@gmail.com
+###### For more information about this page contact the web developer at pfmarinsky@gmail.com
