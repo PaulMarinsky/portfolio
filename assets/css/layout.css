@@ -75,7 +75,7 @@ h2 a:hover {
     -webkit-text-shadow: 0 1px 5px rgb(0,0,0);
 }
 
-/* CONTENT */
+/* MAIN PAGE CONTENT */
 #linkContent .info { 
     max-height: 500px;
     padding:20px; 
@@ -121,8 +121,6 @@ h2 a:hover {
     transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg); 
 }
-
-
 .linkId { 
     padding:10px; 
     width:176px; 
@@ -188,14 +186,8 @@ h2 a:hover {
     margin: -8px;
 }
 
-
-
-
-
-
-
-
-.popup{
+/* Modal Layout */
+.popup {
     width: 100%;
     height: 100vh;
     display: none;
@@ -212,11 +204,11 @@ h2 a:hover {
     color: rgb(255,255,255);
   }
   
-  #popup-modal:target{
+  #popup-modal:target {
     display: flex;
   }
   
-  .popup:before{
+  .popup:before {
     content: "";
     margin-right: 15%;
     margin-left: 15%;
@@ -231,7 +223,7 @@ h2 a:hover {
     animation: open-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) .65s both;
   }
   
-  .popup:after{
+  .popup:after {
     content: "";
     width: 0;
     height: 2px;
@@ -243,8 +235,40 @@ h2 a:hover {
     left: 0;
     margin-top: -1px;
   }
-  
-  @keyframes line-animation{
+  .popup__title {
+    font-size: 2.5rem;
+    margin: 0 0 1em;
+    padding-top: 45px;
+  }
+  .popup__close {
+    width: 3.2rem;
+    height: 3.2rem;
+    text-indent: -9999px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+  }
+  .open-popup {
+    color: rgb(20, 112, 199);
+    text-transform: uppercase;
+    border: 1px solid;
+  }
+  .popup__block {
+    height: calc(100vh - 40px);
+    padding: 5% 15%;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    overflow: auto;
+    animation: fade .5s ease-out 1.3s both;
+  }
+
+  /* Modal Animation Keyframes */
+  @keyframes line-animation { 
   
     0%{
       width: 0;
@@ -261,8 +285,7 @@ h2 a:hover {
       opacity: 0.5;
     }  
   }
-  
-  @keyframes open-animation{
+  @keyframes open-animation {
   
     0%{
       height: 0;
@@ -274,17 +297,6 @@ h2 a:hover {
       top: 0;
     }
   }
-  
-  .popup__block{
-    height: calc(100vh - 40px);
-    padding: 5% 15%;
-    box-sizing: border-box;
-    position: relative;
-    margin: auto;
-    overflow: auto;
-    animation: fade .5s ease-out 1.3s both;
-  }
-  
   @keyframes fade{
   
     0%{
@@ -296,39 +308,4 @@ h2 a:hover {
     }
   }
   
-  .popup__title{
-    font-size: 2.5rem;
-    margin: 0 0 1em;
-    padding-top: 45px;
-  }
-  
-  .popup__close{
-    width: 3.2rem;
-    height: 3.2rem;
-    text-indent: -9999px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
-  }
-
-  .open-popup{
-    color: rgb(20, 112, 199);
-    text-transform: uppercase;
-    border: 1px solid;
-  }
-  
-  .page{
-    min-height: 100vh;
-    display: flex;
-  }
-  
-  .page__container{
-    max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;  
-    margin: auto;
-  }
+   
