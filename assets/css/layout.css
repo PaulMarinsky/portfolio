@@ -305,11 +305,11 @@ h2 a:hover {
   @keyframes fade{
   
     0%{
-      opacity: 0.8;
+      opacity: 0.5;
     }
   
     100%{
-      opacity: 0;
+      opacity: 1;
     }
   }
   
